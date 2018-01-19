@@ -1,0 +1,7 @@
+Warning (10268): Verilog HDL information at Backgrounds.v(40): always construct contains both blocking and non-blocking assignments File: C:/Users/Polina Govorkova/Downloads/BattleShip/Backgrounds.v Line: 40
+Warning (10268): Verilog HDL information at Backgrounds.v(81): always construct contains both blocking and non-blocking assignments File: C:/Users/Polina Govorkova/Downloads/BattleShip/Backgrounds.v Line: 81
+Warning (10268): Verilog HDL information at Backgrounds.v(147): always construct contains both blocking and non-blocking assignments File: C:/Users/Polina Govorkova/Downloads/BattleShip/Backgrounds.v Line: 147
+Warning (10268): Verilog HDL information at Backgrounds.v(188): always construct contains both blocking and non-blocking assignments File: C:/Users/Polina Govorkova/Downloads/BattleShip/Backgrounds.v Line: 188
+Warning (10268): Verilog HDL information at Backgrounds.v(256): always construct contains both blocking and non-blocking assignments File: C:/Users/Polina Govorkova/Downloads/BattleShip/Backgrounds.v Line: 256
+Warning (10268): Verilog HDL information at Backgrounds.v(297): always construct contains both blocking and non-blocking assignments File: C:/Users/Polina Govorkova/Downloads/BattleShip/Backgrounds.v Line: 297
+Warning (10268): Verilog HDL information at MainFSM.v(6): always construct contains both blocking and non-blocking assignments File: C:/Users/Polina Govorkova/Downloads/BattleShip/MainFSM.v Line: 6

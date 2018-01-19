@@ -1,0 +1,45 @@
+module attackDisplayController(
+input [3:0] x, y,
+input isPlayer1,isPlayer2, attackTypePlayer1,attackTypePlayer2,
+ output reg[7:0]posXout,
+ output reg[7:0]posYout,
+ output reg[2:0]colourOut,
+ input ResetN,clk);
+ 
+ reg [3:0] squarecounter;
+ reg [3:0] xReg, yReg;
+ reg isPlayer1register,isPlayer2register, attackTypePlayer1register,attackTypePlayer2register;
+ 
+ 
+ always@(*) begin
+	xReg <= x;
+	yReg <= y;
+	isPlayer1register <= isPlayer1;
+	isPlayer2register <= isPlayer2;
+	attackTypePlayer1register <= attackTypePlayer1;
+	attackTypePlayer2register <= attackTypePlayer2;
+end
+	 //Changing posXout, posYout and color draws a pixel on the screen.
+	 always@(posedge clk) begin
+	 
+			
+			if(isPlayer1register == 1'b1) begin
+		  posXout = 26 + squarecounter[1:0] + xReg*5;
+		  posYout = 36 + squarecounter[3:2] + yReg*5;
+			  if(attackTypePlayer1register == 1'b0) colourOut = 3'b101;
+			  else colourOut = 3'b001;
+			
+		  end
+		  else if(isPlayer2register == 1'b1) begin
+				posXout = 90 + squarecounter[1:0] + xReg*5;
+				posYout = 36 + squarecounter[3:2] + yReg*5;
+					if(attackTypePlayer2register == 1'b0) colourOut = 3'b101;
+		  else colourOut = 3'b001;
+		  end
+		  
+		  squarecounter = squarecounter + 1;
+		  
+		  
+		  
+	 end
+endmodule
